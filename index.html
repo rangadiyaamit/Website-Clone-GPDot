@@ -1,0 +1,2174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--  -->
+
+    <!--  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--  -->
+    <script>
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $(".fixed-top");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
+    <!--  -->
+    <style>
+      .fixed-top.scrolled {
+        background-color: black !important;
+        transition: background-color 1000ms linear;
+        opacity: 0.9;
+      }
+
+      .menu7-ul {
+        margin-left: 50px;
+      }
+      .menu7-a-home {
+        color: white;
+        font-size: 18px;
+        margin: 0px 20px 0px 0px;
+      }
+      .bg-uper-main-div {
+        position: absolute;
+        top: 110px;
+        /* left: 100px; */
+      }
+
+      .menu7-li-dropdown:hover > .ss1 {
+        display: block;
+      }
+      .deep-dropdown-div:hover > .sss {
+        display: block;
+      }
+      .sss {
+        position: absolute;
+        float: right;
+      }
+      .dropdown-item:hover {
+        background-color: #ffc451;
+      }
+
+      @media only screen and (max-width: 767px) {
+        .navbar-ul-div {
+          background-color: white;
+        }
+        .sss11 {
+          bottom: 20%;
+        }
+
+        .menu7-a-home {
+          color: black;
+        }
+      }
+
+      .header-bg,
+      .iii {
+        min-height: 600px;
+      }
+      @media only screen and (max-width: 576px) {
+        .header-bg,
+        .iii {
+          min-height: 1400px;
+        }
+      }
+
+      /* .active, */
+      .menu7-a-home:hover {
+        /* menu bad lay tyre active thay */
+        /* background-color: #666; */
+        color: #ffc451;
+      }
+
+      .l-i {
+        color: white;
+      }
+      .card-5 {
+        border: 1px solid white;
+      }
+      .card-5:hover {
+        border: 1px solid #ffc451;
+      }
+      .card-5:hover > .l-i {
+        color: #ffc451;
+      }
+
+      /*  */
+      /* logo scroll thay tena mate */
+      :root {
+        --body-bg: #fffaee;
+        --item-bg: #ffffff;
+        --accent-color: #ffc451;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+        width: 100%;
+      }
+      .partners_section {
+        padding: 64px 0;
+      }
+      .logos_slider {
+        overflow-x: hidden;
+      }
+      .overflow {
+        display: flex;
+        padding: 0.5rem 1rem;
+
+        overflow: hidden;
+      }
+      .logos_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        animation: logoLoop 30s linear infinite;
+      }
+      .logos_item {
+        margin-left: 1rem;
+        padding: 1rem;
+        aspect-ratio: 30/9;
+        background: var(--item-bg);
+        display: grid;
+        place-items: center;
+        border-radius: 1rem;
+      }
+      .logo_item img {
+        height: 2em;
+        width: 200px;
+        margin-inline: 2rem;
+        /* background-color:white; */
+      }
+      @keyframes logoLoop {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-100%);
+        }
+      }
+
+      .logo_item {
+        /* -webkit-filter: grayscale(100%);  */
+        filter: grayscale(100%);
+      }
+      .logo_item:hover {
+        filter: grayscale(0);
+      }
+      /*  */
+      /*  */
+      .s-::after {
+        content: "";
+        width: 120px;
+        height: 1px;
+        display: inline-block;
+
+        margin: 4px 10px;
+        /* color:black; */
+        background-color: #ffc451;
+      }
+
+      .n-m-c:hover {
+        cursor: pointer;
+        position: relative;
+        /* box-shadow: */
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+        transition: 0.4s ease-in-out;
+        transform: translate(0, -0.9rem);
+      }
+      .bg-fixed {
+        text-align: center;
+        background-image: url("image/cta-bg.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      .p-:after {
+        content: "";
+        background-color: #ffc451;
+        display: inline-block;
+
+        width: 10%;
+        margin: 4px 10px;
+
+        height: 2px;
+      }
+
+      #p-m-4.active {
+        background-color: #ffc451;
+      }
+      #p-m-4 {
+        color: black;
+      }
+      #p-m-4:hover {
+        background-color: #ffc451;
+      }
+      .o-1 {
+        position: absolute;
+        bottom: 0;
+
+        background-color: white;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: 0.5s ease;
+      }
+      .c-1:hover .overlay {
+        height: 28%;
+        opacity: 0.9;
+      }
+
+      .build {
+        filter: blur(4px);
+      }
+      .b-c {
+        width: 100%;
+
+        height: 400px;
+      }
+      #indi {
+        border-radius: 90%;
+        width: 12px;
+        height: 12px;
+        background-color: white;
+      }
+      .ww-card {
+        position: relative;
+        border: 0px solid red;
+        overflow: hidden;
+      }
+      .ww-card:hover .ww-div {
+        /* transform:transition(2s); */
+        /* top: 67%; */
+        bottom: 35%;
+        /* transition: 5s ease; */
+        position: absolute;
+        transition: 0.4s ease-in-out;
+        transform: translate(0, 0.4rem);
+      }
+      .ww-div {
+        margin-top: -28px;
+        /* border:1px solid red; */
+        /* transition: 5s ease; */
+        height: 28px;
+        width: 200px;
+        /* padding:-10px 0px 0px 0px; */
+
+        /* bottom:-100px; */
+      }
+      .logo-4 {
+        background-color: #0a0908;
+        /* border: 1px solid red; */
+        border-radius: 5px;
+        width: 35px;
+        /* opacity: 0.2; */
+        /* justify-content:center; */
+        height: 30px;
+        padding: 5px 0px 0px 0px;
+        text-align: center;
+      }
+      .logo-4:hover,
+      .f-logo-4:hover {
+        background-color: #ffc451;
+        cursor: pointer;
+      }
+      .y-n:focus {
+        border: 2px solid #ffc451;
+
+        -webkit-box-shadow: none;
+      }
+      .f-logo-4 {
+        background-color: #2a2727;
+        width: 35px;
+        border-radius: 5px;
+        color: white;
+      }
+      .u-l-5-a {
+        text-decoration: none;
+        color: white;
+        opacity: 0.7;
+        font-size: 15px;
+      }
+      .u-l-5-a:hover {
+        color: #ffc451;
+        opacity: 1;
+      }
+      .s-t:focus {
+        border: 2px solid #ffc451;
+
+        -webkit-box-shadow: none;
+      }
+      #myBtn {
+        /* display: none; */
+        position: fixed;
+        height: 40px;
+        width: 40px;
+        bottom: 20px;
+        right: 30px;
+        /* z-index: 99; */
+        font-size: 18px;
+        border: none;
+        /* outline: none; */
+        background-color: #ffc451;
+        color: black;
+        cursor: pointer;
+        /* padding: 15px; */
+        border-radius: 4px;
+      }
+
+      #myBtn:hover {
+        background-color: black;
+        color: white;
+      }
+      .sss11 {
+        position: relative;
+        margin: 0 0 0 30px;
+        /* float: left; */
+      }
+      .header-bg {
+        /* background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), */
+        /* url("image/hero-bg.jpg"); */
+      }
+      .header-bg {
+        background-image: url(images/images.jpg);
+        display: block;
+        position: relative;
+      }
+
+      .header-bg::after {
+        content: "";
+        background: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+      }
+
+      .header-bg > * {
+        z-index: 10;
+      }
+      .menu7-a-home.active {
+        color: #ffc451;
+      }
+    </style>
+    <script></script>
+  </head>
+  <body
+    style="position: relative"
+    data-spy="scroll"
+    data-target=".navbar"
+    data-offset="0"
+  >
+    <div class="container-fluid m-0 p-0" style="">
+      <div class="header-bg" style="overflow: hidden; height: 607px" id="home">
+        <img
+          src="image/hero-bg.jpg"
+          alt=""
+          class="img-fluid iii1"
+          style="max-height: 100%; min-width: 1326px; opacity: ; width: 100%"
+        />
+
+        <div
+          class="overlay bg-uper-main-div justify-content-center text-center"
+          style="width: 100%"
+        >
+          <div
+            class="row justify-content-center text-center display-4 text-white"
+            style="font-weight: 700"
+          >
+            <b
+              >Powerful Digital <br />
+              Solutions With GP<span class="text-warning">.</span></b
+            >
+          </div>
+          <div class="row justify-content-center text-center text-white mt-4">
+            <h4>We are team of talented digital marketers</h4>
+          </div>
+          <div class="row justify-content-center mt-5">
+            <div class="card-deck w-75" style="height: 180px">
+              <div
+                class="card bg-transparent card-5 display-4 text-center pt-4"
+              >
+                <i class="fa-solid fa-binoculars" style="color: #ffc451"></i>
+                <h3 class="l-i">Lorem <br />Ipsum</h3>
+              </div>
+
+              <div
+                class="card bg-transparent display-4 card-5 text-center pt-4"
+              >
+                <i class="fa-solid fa-bullseye" style="color: #ffc451"></i>
+
+                <h3 class="l-i">
+                  Dolor <br />
+                  Sitema
+                </h3>
+              </div>
+
+              <div
+                class="card bg-transparent display-4 card-5 text-center pt-4"
+              >
+                <i class="fa-solid fa-compress" style="color: #ffc451"></i>
+
+                <h3 class="l-i">Sedare <br />Perspiciatis</h3>
+              </div>
+
+              <div
+                class="card bg-transparent display-4 card-5 text-center pt-4"
+              >
+                <i
+                  class="fa-regular fa-rectangle-list"
+                  style="color: #ffc451"
+                ></i>
+
+                <h3 class="l-i">Magni <br />Dolores</h3>
+              </div>
+
+              <div
+                class="card bg-transparent display-4 card-5 text-center pt-4"
+              >
+                <i class="fa-regular fa-gem" style="color: #ffc451"></i>
+
+                <h3 class="l-i">Nemos<br />Enimade</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="navbar navbar-expand-md fixed-top nav-nav">
+        <div class="container d-flex justify-content-between">
+          <div class="navbar-brand">
+            <h1 class="text-white aaa">
+              GP<span class="text-warning">.</span>
+            </h1>
+          </div>
+
+          <button
+            class="navbar-toggler n-t"
+            data-toggle="collapse"
+            data-target="#nav1"
+          >
+            <i class="fa-solid fa-bars" style="color: white"></i>
+          </button>
+
+          <div
+            class="collapse navbar-collapse navbar-ul-div"
+            style=""
+            id="nav1"
+          >
+            <ul class="navbar-nav menu7-ul" id="myDIV">
+              <li class="nav-item menu7-li">
+                <a href="#home" class="nav-link menu7-a-home active">Home</a>
+              </li>
+              <li class="nav-item menu7-li">
+                <a href="#about" class="nav-link menu7-a-home">About</a>
+              </li>
+              <li class="nav-item menu7-li">
+                <a href="#services" class="nav-link menu7-a-home">Services</a>
+              </li>
+              <li class="nav-item menu7-li">
+                <a href="#portfolio" class="nav-link menu7-a-home">Portfolio</a>
+              </li>
+              <li class="nav-item menu7-li">
+                <a href="#team" class="nav-link menu7-a-home">Team</a>
+              </li>
+              <li class="nav-item menu7-li dropdown menu7-li-dropdown">
+                <a
+                  href="#"
+                  data-toggle="dropdown"
+                  class="dropdown-toggle nav-link menu7-a-home menu7-a-dropdown"
+                  >Dropdown
+                </a>
+                <div class="dropdown-menu ss1">
+                  <a class="dropdown-item" href="#">Dropdown 1</a>
+                  <div class="dropdown deep-dropdown-div">
+                    <a
+                      class="dropdown-item dropdown-toggle"
+                      data-toggle="dropdown"
+                      href="#"
+                      >Deep Dropdown</a
+                    >
+                    <div class="dropdown-menu sss dropdown-menu-left ml-n5">
+                      <a class="dropdown-item" href="#">Dropdown 1</a>
+                      <a class="dropdown-item" href="#">Dropdown 2</a>
+                      <a class="dropdown-item" href="#">Dropdown 3</a>
+                      <a class="dropdown-item" href="#">Dropdown 4</a>
+                    </div>
+                  </div>
+
+                  <a class="dropdown-item" href="#">Dropdown 2</a>
+                  <a class="dropdown-item" href="#">Dropdown 3</a>
+                  <a class="dropdown-item" href="#">Dropdown 4</a>
+                </div>
+              </li>
+              <li class="nav-item menu7-li">
+                <a href="#contact" class="nav-link menu7-a-home">Contact</a>
+              </li>
+            </ul>
+
+            <button
+              class="btn btn-outline-warning text-white d-xl-block d-sm-none sss11"
+              style="width: 90px"
+              data-toggle="modal"
+              data-target="#myModal"
+            >
+              login
+            </button>
+
+            <div class="modal" data-backdrop="false" style="" id="myModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header bg-warning">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <form action="#">
+                      <div class="form-group">
+                        <div>
+                          <h6>Username</h6>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="enter email"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div>
+                          <h6>password</h6>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="enter password"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group form-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" />
+                          Remember me
+                        </label>
+                      </div>
+                      <button class="btn btn-primary w-100">Login</button>
+                    </form>
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="btn btn-outline-warning text-white d-xl-block d-sm-none sss11"
+              style="width: 100px"
+              data-toggle="modal"
+              data-target="#registration"
+            >
+              registration
+            </button>
+            <div class="modal" data-backdrop="false" style="" id="registration">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header bg-warning">
+                    <h4 class="modal-title">registration</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <form action="#">
+                      <div class="form-group">
+                        <div>
+                          <h6>Username</h6>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="enter email"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div>
+                          <h6>password</h6>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="enter password"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group form-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" />
+                          Remember me
+                        </label>
+                      </div>
+                      <button class="btn btn-primary w-100">
+                        registration
+                      </button>
+                    </form>
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container mt-5" id="about" style="">
+        <!-- <p>sd</p> -->
+        <div class="row pt-5">
+          <div class="col-md-6 order-2 order-md-1" style="opacity: 0.8">
+            <h3 style="font-weight: 800">Voluptatem dignissimos provident</h3>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p>
+              <i class="fa-solid fa-check-double mr-3" style="color: #ffd43b">
+              </i>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <p>
+              <i class="fa-solid fa-check-double mr-3" style="color: #ffd43b">
+              </i>
+
+              Duis aute irure dolor in reprehenderit in voluptate velit.
+            </p>
+            <div class="row">
+              <i class="fa-solid fa-check-double ml-3" style="color: #ffd43b">
+              </i>
+
+              <span class="ml-3" style="max-width: 500px">
+                Ullamco laboris nisi ut aliquip ex e a commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate trideta
+                storacalaperda mastiro dolore eu fugi at nulla pariatur.
+              </span>
+            </div>
+            <p></p>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate velit esse cillum dolore
+              eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident
+            </p>
+          </div>
+          <div class="col-md-6 order-1 order-md-2">
+            <img src="image/about.jpg" width="100%" height="400px" alt="" />
+          </div>
+        </div>
+      </div>
+      
+      <div class="partners_section">
+        <div class="logos_slider">
+          <div class="overflow">
+            <div class="logos_wrapper">
+              <div class="logo_item" style="">
+                <img
+                  src="image/client-1.png"
+                  class="border111"
+                  style=""
+                  alt=""
+                />
+              </div>
+              <div class="logo_item">
+                <img src="image/client-2.png" alt="" />
+              </div>
+              <div class="logo_item">
+                <img src="image/client-3.png" alt="" />
+              </div>
+              <div class="logo_item">
+                <img src="image/client-4.png" alt="" />
+              </div>
+              <div class="logo_item">
+                <img src="image/client-5.png" alt="" />
+              </div>
+              <div class="logo_item">
+                <img src="image/client-6.png" alt="" />
+              </div>
+              <div class="logo_item">
+                <img src="image/client-7.png" alt="" />
+              </div>
+              <div class="logo_item">
+                <img src="image/client-8.png" alt="" />
+              </div>
+            </div>
+            <div class="logos_wrapper">
+              <div class="logo_item">
+                <img src="image/client-1.png" alt="" />
+              </div>
+              <div class="logo_item">
+                <img src="image/client-2.png" alt="" />
+              </div>
+              <div class="logo_item">
+                <img src="image/client-3.png" alt="" />
+              </div>
+              <div class="logo_item">
+                <img src="image/client-4.png" alt="" />
+              </div>
+              <div class="logo_item">
+                <img src="image/client-5.png" alt="" />
+              </div>
+              <div class="logo_item">
+                <img src="image/client-6.png" alt="" />
+              </div>
+              <div class="logo_item">
+                <img src="image/client-7.png" alt="" />
+              </div>
+              <div class="logo_item">
+                <img src="image/client-8.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="image/features-bg.jpg"
+              height="450px"
+              width="100%"
+              alt=""
+            />
+          </div>
+          <div class="col-md-6 align-content-around">
+            <div class="d-flex mt-5">
+              <i
+                class="fa-solid fa-box-archive"
+                style="font-size: 50px; color: #ffd43b"
+              ></i>
+              <div class="ml-4">
+                <h4>Est labore ad</h4>
+                <p class="text-black-50">
+                  Consequuntur sunt aut quasi enim aliquam quae harum pariatur
+                  laboris nisi ut aliquip
+                </p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <i
+                class="fa-solid fa-basket-shopping"
+                style="color: #ffd43b; font-size: 50px"
+              ></i>
+              <div class="ml-4">
+                <h4>Harum esse qui</h4>
+                <p class="text-black-50">
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt
+                </p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <i
+                class="fa-solid fa-tower-broadcast"
+                style="font-size: 50px; color: #ffd43b"
+              ></i>
+              <div class="ml-4">
+                <h4>Aut occaecati</h4>
+                <p class="text-black-50">
+                  Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut
+                  maiores omnis facere
+                </p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <i
+                class="fa-solid fa-video"
+                style="font-size: 50px; color: #ffd43b"
+              ></i>
+              <div class="ml-4">
+                <h4>Beatae veritatis</h4>
+                <p class="text-black-50">
+                  Expedita veritatis consequuntur nihil tempore laudantium vitae
+                  denat pacta
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5 container" id="services">
+        <h2 class="s- text-black-50">services</h2>
+        <h1 style="text-transform: uppercase">Check our Services</h1>
+        <div class="card-deck mt-5">
+          <div
+            class="card n-m-c justify-content-center align-items-center p-1"
+            style="height: 350px"
+          >
+            <i
+              class="fa-solid fa-wave-square card justify-content-center align-items-center"
+              style="
+                font-size: 40px;
+
+                max-height: 60px;
+                color: #000000;
+                background-color: #ffc451;
+                width: 60px;
+              "
+            ></i>
+            <h2 class="text-center">Nesciunt Mete</h2>
+            <p class="text-center">
+              Provident nihil minus qui consequatur non omnis maiores. Eos
+              accusantium minus dolores iure perferendis tempore et consequatur.
+            </p>
+          </div>
+          <div
+            class="card n-m-c justify-content-center align-items-center p-1"
+            style="height: 350px"
+          >
+            <i
+              class="fa-solid fa-tower-broadcast card justify-content-center align-items-center"
+              style="
+                font-size: 40px;
+
+                max-height: 60px;
+                color: #000000;
+                background-color: #ffc451;
+                width: 60px;
+              "
+            ></i>
+            <h2 class="text-center">Eosle Commodi</h2>
+            <p class="text-center">
+              Ut autem aut autem non a. Sint sint sit facilis nam iusto sint.
+              Libero corrupti neque eum hic non ut nesciunt dolorem.
+            </p>
+          </div>
+          <div
+            class="card n-m-c justify-content-center align-items-center p-1"
+            style="height: 350px"
+          >
+            <i
+              class="fa-solid fa-tv fa-flip-vertical card justify-content-center align-items-center"
+              style="
+                font-size: 40px;
+
+                max-height: 60px;
+                color: #000000;
+                background-color: #ffc451;
+                width: 60px;
+              "
+            ></i>
+            <h2 class="text-center">Ledo Markt</h2>
+            <p class="text-center">
+              Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus
+              ea aut. Vel qui id voluptas adipisci eos earum corrupti.
+            </p>
+          </div>
+        </div>
+        <br />
+        <div class="card-deck">
+          <div
+            class="card n-m-c justify-content-center align-items-center p-1"
+            style="height: 350px"
+          >
+            <i
+              class="fa-solid fa-boxes-stacked card justify-content-center align-items-center"
+              style="
+                font-size: 40px;
+
+                max-height: 60px;
+                color: #000000;
+                background-color: #ffc451;
+                width: 60px;
+              "
+            ></i>
+            <h2 class="text-center">Asperiores Commodit</h2>
+            <p class="text-center">
+              Non et temporibus minus omnis sed dolor esse consequatur.
+              Cupiditate sed error ea fuga sit provident adipisci neque.
+            </p>
+          </div>
+          <div
+            class="card n-m-c justify-content-center align-items-center p-1"
+            style="height: 350px"
+          >
+            <i
+              class="fa-regular fa-calendar-days card justify-content-center align-items-center"
+              style="
+                font-size: 40px;
+
+                max-height: 60px;
+                color: #000000;
+                background-color: #ffc451;
+                width: 60px;
+              "
+            ></i>
+            <h2 class="text-center">Velit Doloremque</h2>
+            <p class="text-center">
+              Cumque et suscipit saepe. Est maiores autem enim facilis ut aut
+              ipsam corporis aut. Sed animi at autem alias eius labore.
+            </p>
+          </div>
+          <div
+            class="card n-m-c justify-content-center align-items-center p-1"
+            style="height: 350px"
+          >
+            <i
+              class="fa-solid fa-message card justify-content-center align-items-center"
+              style="
+                font-size: 40px;
+
+                max-height: 60px;
+                color: #000000;
+                background-color: #ffc451;
+                width: 60px;
+              "
+            ></i>
+            <h2 class="text-center">Dolori Architecto</h2>
+            <p class="text-center">
+              Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque
+              non et debitis iure. Corrupti recusandae ducimus enim.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid border bg-fixed mt-5">
+        <div class="row flex-column text-white" style="height: 300px">
+          <h2 class="mt-auto">Call To Action</h2>
+          <p class="w-75 mx-auto" style="">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+          <button
+            class="btn mb-auto btn-outline-warning mx-auto"
+            style="width: 200px"
+          >
+            Call To Action
+          </button>
+        </div>
+      </div>
+      <div class="container mt-5" id="portfolio">
+        <h4 class="p- text-black-50">PORTFOLIO</h4>
+        <h1 style="text-transform: uppercase">check our Portfolio</h1>
+        <ul class="nav nav-pills justify-content-center mt-5" role="tablist">
+          <li class="nav-item">
+            <a
+              href="#all"
+              data-toggle="pill"
+              class="nav-link active mr-3"
+              id="p-m-4"
+              style=""
+              >All</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#app" class="nav-link mr-3" id="p-m-4" data-toggle="pill"
+              >App</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#card" class="nav-link mr-3" id="p-m-4" data-toggle="pill"
+              >Card</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#web" class="nav-link" id="p-m-4" data-toggle="pill"
+              >Web</a
+            >
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="all">
+            <div class="card-columns mt-5">
+              <div class="card border-0 c-1">
+                <img
+                  src="image/masonry-portfolio-1.jpg"
+                  height="auto"
+                  class="i"
+                  width="100%"
+                  alt=""
+                />
+                <div class="overlay o-1 container">
+                  <h5 class="text">App 1</h5>
+                  <p class="text-black-50">
+                    Lorem ipsum, dolor sit
+                    <span
+                      ><i
+                        class="fa-solid fa-magnifying-glass-plus ml-5"
+                        style="font-size: 25px"
+                      ></i
+                      ><i
+                        class="fa-solid fa-link ml-3"
+                        style="font-size: 25px"
+                      ></i
+                    ></span>
+                  </p>
+                </div>
+              </div>
+              <div class="card border-0 c-1">
+                <img
+                  src="image/masonry-portfolio-6.jpg"
+                  height="auto"
+                  width="100%"
+                  class=""
+                  alt=""
+                />
+                <div class="overlay o-1 container">
+                  <h5 class="text">Branding 2</h5>
+                  <p class="text-black-50">
+                    Lorem ipsum, dolor sit
+                    <span
+                      ><i
+                        class="fa-solid fa-magnifying-glass-plus ml-5"
+                        style="font-size: 25px"
+                      ></i
+                      ><i
+                        class="fa-solid fa-link ml-3"
+                        style="font-size: 25px"
+                      ></i
+                    ></span>
+                  </p>
+                </div>
+              </div>
+              <div class="card border-0 c-1">
+                <img
+                  src="image/masonry-portfolio-2.jpg"
+                  height="auto"
+                  width="100%"
+                  alt=""
+                />
+                <div class="overlay o-1 container">
+                  <h5 class="text">Product 1</h5>
+                  <p class="text-black-50">
+                    Lorem ipsum, dolor sit
+                    <span
+                      ><i
+                        class="fa-solid fa-magnifying-glass-plus ml-5"
+                        style="font-size: 25px"
+                      ></i
+                      ><i
+                        class="fa-solid fa-link ml-3"
+                        style="font-size: 25px"
+                      ></i
+                    ></span>
+                  </p>
+                </div>
+              </div>
+              <div class="card border-0 c-1">
+                <img
+                  src="image/masonry-portfolio-5.jpg"
+                  height="auto"
+                  width="100%"
+                  alt=""
+                />
+                <div class="overlay o-1 container">
+                  <h5 class="text">Product 2</h5>
+                  <p class="text-black-50">
+                    Lorem ipsum, dolor sit
+                    <span
+                      ><i
+                        class="fa-solid fa-magnifying-glass-plus ml-5"
+                        style="font-size: 25px"
+                      ></i
+                      ><i
+                        class="fa-solid fa-link ml-3"
+                        style="font-size: 25px"
+                      ></i
+                    ></span>
+                  </p>
+                </div>
+              </div>
+              <div class="card border-0 c-1">
+                <img
+                  src="image/masonry-portfolio-9.jpg"
+                  height="auto"
+                  width="100%"
+                  alt=""
+                />
+                <div class="overlay o-1 container">
+                  <h5 class="text">Branding 3</h5>
+                  <p class="text-black-50">
+                    Lorem ipsum, dolor sit
+                    <span
+                      ><i
+                        class="fa-solid fa-magnifying-glass-plus ml-5"
+                        style="font-size: 25px"
+                      ></i
+                      ><i
+                        class="fa-solid fa-link ml-3"
+                        style="font-size: 25px"
+                      ></i
+                    ></span>
+                  </p>
+                </div>
+              </div>
+              <div class="card border-0 c-1">
+                <img
+                  src="image/masonry-portfolio-3.jpg"
+                  height="auto"
+                  width="100%"
+                  alt=""
+                />
+                <div class="overlay o-1 container">
+                  <h5 class="text">Branding 1</h5>
+                  <p class="text-black-50">
+                    Lorem ipsum, dolor sit
+                    <span
+                      ><i
+                        class="fa-solid fa-magnifying-glass-plus ml-5"
+                        style="font-size: 25px"
+                      ></i
+                      ><i
+                        class="fa-solid fa-link ml-3"
+                        style="font-size: 25px"
+                      ></i
+                    ></span>
+                  </p>
+                </div>
+              </div>
+              <div class="card border-0 c-1">
+                <img
+                  src="image/masonry-portfolio-4.jpg"
+                  height="auto"
+                  width="100%"
+                  alt=""
+                />
+                <div class="overlay o-1 container">
+                  <h5 class="text">App 2</h5>
+                  <p class="text-black-50">
+                    Lorem ipsum, dolor sit
+                    <span
+                      ><i
+                        class="fa-solid fa-magnifying-glass-plus ml-5"
+                        style="font-size: 25px"
+                      ></i
+                      ><i
+                        class="fa-solid fa-link ml-3"
+                        style="font-size: 25px"
+                      ></i
+                    ></span>
+                  </p>
+                </div>
+              </div>
+              <div class="card border-0 c-1">
+                <img
+                  src="image/masonry-portfolio-7.jpg"
+                  height="auto"
+                  width="100%"
+                  alt=""
+                />
+                <div class="overlay o-1 container">
+                  <h5 class="text">App 3</h5>
+                  <p class="text-black-50">
+                    Lorem ipsum, dolor sit
+                    <span
+                      ><i
+                        class="fa-solid fa-magnifying-glass-plus ml-5"
+                        style="font-size: 25px"
+                      ></i
+                      ><i
+                        class="fa-solid fa-link ml-3"
+                        style="font-size: 25px"
+                      ></i
+                    ></span>
+                  </p>
+                </div>
+              </div>
+              <div class="card border-0 c-1">
+                <img
+                  src="image/masonry-portfolio-8.jpg"
+                  height="auto"
+                  width="100%"
+                  alt=""
+                />
+                <div class="overlay o-1 container">
+                  <h5 class="text">Product 3</h5>
+                  <p class="text-black-50">
+                    Lorem ipsum, dolor sit
+                    <span
+                      ><i
+                        class="fa-solid fa-magnifying-glass-plus ml-5"
+                        style="font-size: 25px"
+                      ></i
+                      ><i
+                        class="fa-solid fa-link ml-3"
+                        style="font-size: 25px"
+                      ></i
+                    ></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="app">
+            <div class="card-columns mt-5">
+              <div class="card border-0 c-1">
+                <img
+                  src="image/masonry-portfolio-1.jpg"
+                  height="auto"
+                  class="i"
+                  width="100%"
+                  alt=""
+                />
+                <div class="overlay o-1 container">
+                  <h5 class="text">App 1</h5>
+                  <p class="text-black-50">
+                    Lorem ipsum, dolor sit
+                    <span
+                      ><i
+                        class="fa-solid fa-magnifying-glass-plus ml-5"
+                        style="font-size: 25px"
+                      ></i
+                      ><i
+                        class="fa-solid fa-link ml-3"
+                        style="font-size: 25px"
+                      ></i
+                    ></span>
+                  </p>
+                </div>
+              </div>
+              <div class="card border-0 c-1">
+                <img
+                  src="image/masonry-portfolio-4.jpg"
+                  height="auto"
+                  width="100%"
+                  class=""
+                  alt=""
+                />
+                <div class="overlay o-1 container">
+                  <h5 class="text">App 2</h5>
+                  <p class="text-black-50">
+                    Lorem ipsum, dolor sit
+                    <span
+                      ><i
+                        class="fa-solid fa-magnifying-glass-plus ml-5"
+                        style="font-size: 25px"
+                      ></i
+                      ><i
+                        class="fa-solid fa-link ml-3"
+                        style="font-size: 25px"
+                      ></i
+                    ></span>
+                  </p>
+                </div>
+              </div>
+              <div class="card border-0 c-1">
+                <img
+                  src="image/masonry-portfolio-7.jpg"
+                  height="auto"
+                  width="100%"
+                  alt=""
+                />
+                <div class="overlay o-1 container">
+                  <h5 class="text">App 3</h5>
+                  <p class="text-black-50">
+                    Lorem ipsum, dolor sit
+                    <span
+                      ><i
+                        class="fa-solid fa-magnifying-glass-plus ml-5"
+                        style="font-size: 25px"
+                      ></i
+                      ><i
+                        class="fa-solid fa-link ml-3"
+                        style="font-size: 25px"
+                      ></i
+                    ></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="card">
+            <div class="card-columns mt-5">
+              <div class="card border-0 c-1">
+                <img
+                  src="image/masonry-portfolio-2.jpg"
+                  height="auto"
+                  class="i"
+                  width="100%"
+                  alt=""
+                />
+                <div class="overlay o-1 container">
+                  <h5 class="text">Product 1</h5>
+                  <p class="text-black-50">
+                    Lorem ipsum, dolor sit
+                    <span
+                      ><i
+                        class="fa-solid fa-magnifying-glass-plus ml-5"
+                        style="font-size: 25px"
+                      ></i
+                      ><i
+                        class="fa-solid fa-link ml-3"
+                        style="font-size: 25px"
+                      ></i
+                    ></span>
+                  </p>
+                </div>
+              </div>
+              <div class="card border-0 c-1">
+                <img
+                  src="image/masonry-portfolio-5.jpg"
+                  height="auto"
+                  width="100%"
+                  class=""
+                  alt=""
+                />
+                <div class="overlay o-1 container">
+                  <h5 class="text">Product 2</h5>
+                  <p class="text-black-50">
+                    Lorem ipsum, dolor sit
+                    <span
+                      ><i
+                        class="fa-solid fa-magnifying-glass-plus ml-5"
+                        style="font-size: 25px"
+                      ></i
+                      ><i
+                        class="fa-solid fa-link ml-3"
+                        style="font-size: 25px"
+                      ></i
+                    ></span>
+                  </p>
+                </div>
+              </div>
+              <div class="card border-0 c-1">
+                <img
+                  src="image/masonry-portfolio-8.jpg"
+                  height="auto"
+                  width="100%"
+                  alt=""
+                />
+                <div class="overlay o-1 container">
+                  <h5 class="text">Product 3</h5>
+                  <p class="text-black-50">
+                    Lorem ipsum, dolor sit
+                    <span
+                      ><i
+                        class="fa-solid fa-magnifying-glass-plus ml-5"
+                        style="font-size: 25px"
+                      ></i
+                      ><i
+                        class="fa-solid fa-link ml-3"
+                        style="font-size: 25px"
+                      ></i
+                    ></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="web">
+            <div class="card-columns mt-5">
+              <div class="card border-0 c-1">
+                <img
+                  src="image/masonry-portfolio-3.jpg"
+                  height="auto"
+                  class="i"
+                  width="100%"
+                  alt=""
+                />
+                <div class="overlay o-1 container">
+                  <h5 class="text">Branding 1</h5>
+                  <p class="text-black-50">
+                    Lorem ipsum, dolor sit
+                    <span
+                      ><i
+                        class="fa-solid fa-magnifying-glass-plus ml-5"
+                        style="font-size: 25px"
+                      ></i
+                      ><i
+                        class="fa-solid fa-link ml-3"
+                        style="font-size: 25px"
+                      ></i
+                    ></span>
+                  </p>
+                </div>
+              </div>
+              <div class="card border-0 c-1">
+                <img
+                  src="image/masonry-portfolio-6.jpg"
+                  height="auto"
+                  width="100%"
+                  class=""
+                  alt=""
+                />
+                <div class="overlay o-1 container">
+                  <h5 class="text">Branding 2</h5>
+                  <p class="text-black-50">
+                    Lorem ipsum, dolor sit
+                    <span
+                      ><i
+                        class="fa-solid fa-magnifying-glass-plus ml-5"
+                        style="font-size: 25px"
+                      ></i
+                      ><i
+                        class="fa-solid fa-link ml-3"
+                        style="font-size: 25px"
+                      ></i
+                    ></span>
+                  </p>
+                </div>
+              </div>
+              <div class="card border-0 c-1">
+                <img
+                  src="image/masonry-portfolio-9.jpg"
+                  height="auto"
+                  width="100%"
+                  alt=""
+                />
+                <div class="overlay o-1 container">
+                  <h5 class="text">Branding 3</h5>
+                  <p class="text-black-50">
+                    Lorem ipsum, dolor sit
+                    <span
+                      ><i
+                        class="fa-solid fa-magnifying-glass-plus ml-5"
+                        style="font-size: 25px"
+                      ></i
+                      ><i
+                        class="fa-solid fa-link ml-3"
+                        style="font-size: 25px"
+                      ></i
+                    ></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-5 pl-0">
+            <img src="image/stats-img.jpg " class="" width="100%" alt="" />
+          </div>
+
+          <div class="col-md-1"></div>
+          <div class="col-md-6">
+            <h2>Voluptatem dignissimos provident quasi</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
+              aute irure dolor in reprehenderit
+            </p>
+
+            <div class="row ml-1">
+              <div class="col-md-6 d-flex">
+                <i
+                  class="fa-solid fa-face-smile"
+                  style="color: #ffd43b; font-size: 40px"
+                ></i>
+                <div>
+                  <div class="ml-3">
+                    <h1>232</h1>
+                    <p class="" style="opacity: 0.7">
+                      Happy Clients
+                      <span class="text-black-50"> consequuntur quae</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 d-flex">
+                <i
+                  class="fa-solid fa-book-journal-whills"
+                  style="color: #ffd43b; font-size: 40px"
+                ></i>
+                <div>
+                  <div class="ml-3">
+                    <h1>521</h1>
+                    <p class="" style="opacity: 0.7">
+                      Projects
+                      <span class="text-black-50">
+                        adipisci atque cum quia aut</span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row ml-1 mt-5">
+              <div class="col-md-6 d-flex">
+                <i
+                  class="fa-solid fa-headset"
+                  style="color: #ffd43b; font-size: 40px"
+                ></i>
+
+                <div>
+                  <div class="ml-3">
+                    <h1>1453</h1>
+                    <p class="" style="opacity: 0.7">
+                      Hours Of Support
+                      <span class="text-black-50"> aut commodi quaerat </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 d-flex">
+                <i
+                  class="fa-solid fa-user-group"
+                  style="color: #ffd43b; font-size: 40px"
+                ></i>
+
+                <div>
+                  <div class="ml-3">
+                    <h1>32</h1>
+                    <p class="" style="opacity: 0.7">
+                      Hard Workers
+                      <span class="text-black-50"> rerum asperiores dolor</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container-fluid mx-0 px-0 mt-5"
+        style="background-image: url('image/testimonials-bg.jpg')"
+      >
+        <div
+          class="carousel slide"
+          data-interval="2000"
+          id="ddd"
+          data-ride="carousel"
+        >
+          <ul class="carousel-indicators">
+            <li
+              class="active"
+              data-target="#ddd"
+              data-slide-to="0"
+              id="indi"
+            ></li>
+            <li class="" data-target="#ddd" data-slide-to="1" id="indi"></li>
+            <li class="" data-target="#ddd" data-slide-to="2" id="indi"></li>
+            <li class="" data-target="#ddd" data-slide-to="3" id="indi"></li>
+            <li class="" data-target="#ddd" data-slide-to="4" id="indi"></li>
+          </ul>
+          <div class="carousel-inner w-75 mx-auto pt-5">
+            <div class="carousel-item active">
+              <div
+                class="card b-c c-sg bg-transparent d-flex border-0 align-items-center"
+              >
+                <img
+                  src="image/testimonials-1.jpg"
+                  class="rounded-circle"
+                  style="
+                    width: 100px;
+                    height: 100px;
+                    border: 5px solid rgba(255, 255, 255, 0.5);
+                  "
+                  alt=""
+                />
+                <h2 class="text-white">Saul Goodman</h2>
+                <p class="text-white" style="opacity: 0.9">CEO & founder</p>
+                <p>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                </p>
+                <p
+                  class="text-white"
+                  style="font-weight: 600; text-align: center; font-size: 15px"
+                >
+                  <i
+                    class="fa-solid fa-quote-left mr-3"
+                    style="font-size: 30px"
+                  ></i
+                  >Proin iaculis purus consequat sem cure digni ssim donec
+                  porttitora entum suscipit rhoncus. Accusantium quam, ultricies
+                  eget id, aliquam eget nibh et. Maecen aliquam, risus at
+                  semper.<i
+                    class="fa-solid fa-quote-right ml-3"
+                    style="font-size: 30px"
+                  ></i>
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="card b-c c-sg bg-transparent border-0 d-flex align-items-center"
+              >
+                <img
+                  src="image/testimonials-2.jpg"
+                  class="rounded-circle"
+                  style="
+                    width: 100px;
+                    height: 100px;
+                    border: 5px solid rgba(255, 255, 255, 0.5);
+                  "
+                  alt=""
+                />
+                <h2 class="text-white">Sara Wilsson</h2>
+                <p class="text-white" style="opacity: 0.9">Designer</p>
+                <p>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                </p>
+                <p
+                  class="text-white"
+                  style="font-weight: 600; text-align: center; font-size: 15px"
+                >
+                  <i
+                    class="fa-solid fa-quote-left mr-3"
+                    style="font-size: 30px"
+                  ></i
+                  >Export tempor illum tamen malis malis eram quae irure esse
+                  labore quem cillum quid cillum eram malis quorum velit fore
+                  eram velit sunt aliqua noster fugiat irure amet legam anim
+                  culpa.<i
+                    class="fa-solid fa-quote-right ml-3"
+                    style="font-size: 30px"
+                  ></i>
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="card b-c c-sg bg-transparent border-0 d-flex align-items-center"
+              >
+                <img
+                  src="image/testimonials-3.jpg"
+                  class="rounded-circle"
+                  style="
+                    width: 100px;
+                    height: 100px;
+                    border: 5px solid rgba(255, 255, 255, 0.5);
+                  "
+                  alt=""
+                />
+                <h2 class="text-white">Jena Karlis</h2>
+                <p class="text-white" style="opacity: 0.9">Store Owner</p>
+                <p>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                </p>
+                <p
+                  class="text-white"
+                  style="font-weight: 600; text-align: center; font-size: 15px"
+                >
+                  <i
+                    class="fa-solid fa-quote-left mr-3"
+                    style="font-size: 30px"
+                  ></i
+                  >Enim nisi quem export duis labore cillum quae magna enim sint
+                  quorum nulla quem veniam duis minim tempor labore quem eram
+                  duis noster aute amet eram fore quis sint minim.<i
+                    class="fa-solid fa-quote-right ml-3"
+                    style="font-size: 30px"
+                  ></i>
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="card b-c c-sg bg-transparent border-0 d-flex align-items-center"
+              >
+                <img
+                  src="image/testimonials-4.jpg"
+                  class="rounded-circle"
+                  style="
+                    width: 100px;
+                    height: 100px;
+                    border: 5px solid rgba(255, 255, 255, 0.5);
+                  "
+                  alt=""
+                />
+                <h2 class="text-white">Matt Brandon</h2>
+                <p class="text-white" style="opacity: 0.9">Freelancer</p>
+                <p>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                </p>
+                <p
+                  class="text-white"
+                  style="font-weight: 600; text-align: center; font-size: 15px"
+                >
+                  <i
+                    class="fa-solid fa-quote-left mr-3"
+                    style="font-size: 30px"
+                  ></i
+                  >Fugiat enim eram quae cillum dolore dolor amet nulla culpa
+                  multos export minim fugiat minim velit minim dolor enim duis
+                  veniam ipsum anim magna sunt elit fore quem dolore labore
+                  illum veniam.<i
+                    class="fa-solid fa-quote-right ml-3"
+                    style="font-size: 30px"
+                  ></i>
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="card b-c c-sg bg-transparent border-0 d-flex align-items-center"
+              >
+                <img
+                  src="image/testimonials-5.jpg"
+                  class="rounded-circle"
+                  style="
+                    width: 100px;
+                    height: 100px;
+                    border: 5px solid rgba(255, 255, 255, 0.5);
+                  "
+                  alt=""
+                />
+                <h2 class="text-white">Josn Larson</h2>
+                <p class="text-white" style="opacity: 0.9">Entrepreneur</p>
+                <p>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                </p>
+                <p
+                  class="text-white"
+                  style="font-weight: 600; text-align: center; font-size: 15px"
+                >
+                  <i
+                    class="fa-solid fa-quote-left mr-3"
+                    style="font-size: 30px"
+                  ></i
+                  >Quis quorum aliqua sint quem legam fore sunt eram irure
+                  aliqua veniam tempor noster veniam enim culpa labore duis sunt
+                  culpa nulla illum cillum fugiat legam esse veniam culpa fore
+                  nisi cillum quid.<i
+                    class="fa-solid fa-quote-right ml-3"
+                    style="font-size: 30px"
+                  ></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5" id="team">
+        <h5 class="s- text-black-50">TEAM</h5>
+        <h1 style="text-transform: uppercase">OUR TEAM</h1>
+
+        <div class="card-deck mt-5">
+          <div
+            class="card shadow ww-card align-items-center"
+            style="border-radius: 6px"
+          >
+            <div
+              class="d-flex justify-content-around ww-div"
+              style="font-size: 20px"
+            >
+              <i class="fa-brands fa-x-twitter logo-4"></i>
+              <i class="fa-brands fa-facebook logo-4"></i>
+              <i class="fa-brands fa-instagram logo-4"></i>
+              <i class="fa-brands fa-linkedin logo-4"></i>
+            </div>
+            <img class="card-img-top" src="image/team-1.jpg" alt="Card image" />
+
+            <div class="card-body">
+              <h5 class="card-title">Walter White</h5>
+              <p class="card-text text-black-50" style="font-size: 14px">
+                Chief Executive Officer
+              </p>
+            </div>
+          </div>
+          <div
+            class="card shadow ww-card align-items-center"
+            style="border-radius: 6px"
+          >
+            <div
+              class="d-flex justify-content-around ww-div"
+              style="font-size: 20px"
+            >
+              <i class="fa-brands fa-x-twitter logo-4"></i>
+              <i class="fa-brands fa-facebook logo-4"></i>
+              <i class="fa-brands fa-instagram logo-4"></i>
+              <i class="fa-brands fa-linkedin logo-4"></i>
+            </div>
+            <img class="card-img-top" src="image/team-2.jpg" alt="Card image" />
+            <div class="card-body">
+              <h5 class="card-title">Sarah Jhonson</h5>
+              <p class="card-text text-black-50" style="font-size: 14px">
+                Product Manager
+              </p>
+            </div>
+          </div>
+          <div
+            class="card shadow ww-card align-items-center"
+            style="border-radius: 6px"
+          >
+            <div
+              class="d-flex justify-content-around ww-div"
+              style="font-size: 20px"
+            >
+              <i class="fa-brands fa-x-twitter logo-4"></i>
+              <i class="fa-brands fa-facebook logo-4"></i>
+              <i class="fa-brands fa-instagram logo-4"></i>
+              <i class="fa-brands fa-linkedin logo-4"></i>
+            </div>
+            <img class="card-img-top" src="image/team-3.jpg" alt="Card image" />
+            <div class="card-body">
+              <h5 class="card-title">William Anderson</h5>
+              <p class="card-text text-black-50" style="font-size: 14px">CTO</p>
+            </div>
+          </div>
+          <div
+            class="card shadow ww-card align-items-center"
+            style="border-radius: 6px"
+          >
+            <div
+              class="d-flex justify-content-around ww-div"
+              style="font-size: 20px"
+            >
+              <i class="fa-brands fa-x-twitter logo-4"></i>
+              <i class="fa-brands fa-facebook logo-4"></i>
+              <i class="fa-brands fa-instagram logo-4"></i>
+              <i class="fa-brands fa-linkedin logo-4"></i>
+            </div>
+            <img class="card-img-top" src="image/team-4.jpg" alt="Card image" />
+            <div class="card-body">
+              <h5 class="card-title">Amanda Jepson</h5>
+              <p class="card-text text-black-50" style="font-size: 14px">
+                Accountant
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5" id="contact">
+        <h5 class="s- text-black-50">CONTACT</h5>
+        <h1 style="text-transform: uppercase">CONTACT US</h1>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29363.47748818213!2d71.13051039733871!3d23.08117819508842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395a2c822b9069ab%3A0x6286517d035add65!2z4Kqc4KuB4Kqo4Kq-IOCqheCqruCqsOCqvuCqquCqsCwg4KqX4KuB4Kqc4Kqw4Kq-4KqkIDM2MzMzMA!5e0!3m2!1sgu!2sin!4v1733062099755!5m2!1sgu!2sin"
+          width="100%"
+          class="mt-5"
+          height="290"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="row mt-4">
+          <div class="col-md-4">
+            <div class="d-flex">
+              <i
+                class="fa-solid fa-location-dot align-items-center d-flex justify-content-center"
+                style="
+                  background-color: #ffc451;
+                  font-size: 30px;
+                  width: 50px;
+                  border-radius: 8px;
+                  height: 50px;
+                "
+              ></i>
+              <div class="ml-4">
+                <h5>Address</h5>
+                <p style="font-size: 15px">
+                  A108 Adam Street, New York, NY 535022
+                </p>
+              </div>
+            </div>
+            <div class="d-flex mt-3">
+              <i
+                class="fa-solid fa-phone align-items-center d-flex justify-content-center"
+                style="
+                  background-color: #ffc451;
+                  font-size: 30px;
+                  border-radius: 8px;
+                  width: 50px;
+                  height: 50px;
+                "
+              ></i>
+              <div class="ml-4">
+                <h5>Call Us</h5>
+                <p style="font-size: 15px">+1 5589 55488 55</p>
+              </div>
+            </div>
+            <div class="d-flex mt-3">
+              <i
+                class="fa-solid fa-envelope align-items-center d-flex justify-content-center"
+                style="
+                  background-color: #ffc451;
+                  font-size: 30px;
+                  border-radius: 8px;
+                  width: 50px;
+                  height: 50px;
+                "
+              ></i>
+              <div class="ml-4">
+                <h5>Email Us</h5>
+                <p style="font-size: 15px">info@example.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 text-center">
+            <div class="d-flex">
+              <input
+                type="text"
+                class="form-control y-n"
+                style="height: 45px"
+                placeholder="Your Name"
+              />
+              <input
+                type="Email"
+                class="form-control ml-4 y-n"
+                placeholder="Your Email"
+                style="height: 45px"
+              />
+            </div>
+            <input
+              type="text"
+              class="form-control mt-4 y-n"
+              style="height: 45px"
+              placeholder="Subject"
+            />
+            <textarea
+              class="form-control mt-4 y-n"
+              rows="5"
+              placeholder="Message"
+            ></textarea>
+            <button class="btn px-4 mx-auto btn-warning mt-4">
+              Send Message
+            </button>
+          </div>
+        </div>
+      </div>
+      <footer
+        class="p-5 mt-5"
+        style="background-color: black; min-height: 400px"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 mt-4" style="">
+              <div class="d-flex flex-column">
+                <h4>
+                  <a class="text-white" style="text-decoration: none" href="#"
+                    >GP</a
+                  >
+                </h4>
+                <div style="font-size: 15px; color: white" class="mt-3">
+                  A<span style="font-size: 12px">10</span>8 Adam Street
+                </div>
+                <div style="font-size: 15px; color: white">
+                  New York, NY
+                  <span class="align-bottom" style="font-size: 12px">535</span
+                  ><span style="font-size: 10px">022</span>
+                </div>
+                <div style="font-size: 15px; color: white" class="mt-3">
+                  <span style="font-weight: 700">Phone:</span>
+                  <span
+                    ><span style="font-size: 11px">+1</span> 55<span
+                      style="font-size: 12px"
+                      class="align-top"
+                      >8</span
+                    >9 554<span style="font-size: 12px" class="align-top"
+                      >88</span
+                    >
+                    55</span
+                  >
+                  <!-- </div> -->
+                  <!-- <div style="font-size: 15px; color: white" class="mt-3"> -->
+                  <span style="font-weight: 700"><br />Email:</span>
+                  <span> info@example.com</span>
+                </div>
+                <div
+                  class="d-flex mt-4"
+                  style="
+                    font-size: 20px;
+
+                    height: 40px;
+                    width: 200px;
+                  "
+                >
+                  <i
+                    class="fa-brands fa-x-twitter f-logo-4 align-items-center d-flex justify-content-center"
+                    style=""
+                  ></i>
+                  <i
+                    class="fa-brands fa-facebook ml-3 f-logo-4 align-items-center d-flex justify-content-center"
+                    style=""
+                  ></i>
+                  <i
+                    class="fa-brands fa-instagram ml-3 f-logo-4 align-items-center d-flex justify-content-center"
+                    style=""
+                  ></i>
+                  <i
+                    class="fa-brands fa-linkedin ml-3 f-logo-4 align-items-center d-flex justify-content-center"
+                    style=""
+                  ></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 mt-4">
+              <h5 style="color: white">Useful Links</h5>
+              <ul style="text-decoration: none" class="nav flex-column">
+                <li class="mt-3">
+                  <a href="#" class="u-l-5-a" style="text-decoration: none">
+                    <span style="color: #ffc451">></span> Home</a
+                  >
+                </li>
+                <li class="mt-2">
+                  <a href="#" class="u-l-5-a" style="text-decoration: none">
+                    <span style="color: #ffc451">></span> About us</a
+                  >
+                </li>
+                <li class="mt-2">
+                  <a href="#" class="u-l-5-a" style="text-decoration: none">
+                    <span style="color: #ffc451">></span> Services</a
+                  >
+                </li>
+                <li class="mt-2">
+                  <a href="#" class="u-l-5-a" style="text-decoration: none">
+                    <span style="color: #ffc451">></span> Terms of service</a
+                  >
+                </li>
+                <li class="mt-2">
+                  <a href="#" class="u-l-5-a" style="text-decoration: none">
+                    <span style="color: #ffc451">></span> Privacy policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-2 mt-4">
+              <h5 style="color: white">Our Services</h5>
+              <ul style="text-decoration: none" class="nav flex-column">
+                <li class="mt-3">
+                  <a href="#" class="u-l-5-a" style="text-decoration: none">
+                    <span style="color: #ffc451">></span> Web Design</a
+                  >
+                </li>
+                <li class="mt-2">
+                  <a href="#" class="u-l-5-a" style="text-decoration: none">
+                    <span style="color: #ffc451">></span> Web Development</a
+                  >
+                </li>
+                <li class="mt-2">
+                  <a href="#" class="u-l-5-a" style="text-decoration: none">
+                    <span style="color: #ffc451">></span> Product Management</a
+                  >
+                </li>
+                <li class="mt-2">
+                  <a href="#" class="u-l-5-a" style="text-decoration: none">
+                    <span style="color: #ffc451">></span> Marketing
+                  </a>
+                </li>
+                <li class="mt-2">
+                  <a href="#" class="u-l-5-a" style="text-decoration: none">
+                    <span style="color: #ffc451">></span> Graphic Design</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 mt-4">
+              <h5 style="color: white">Our Newsletter</h5>
+              <p style="color: white" class="mt-4">
+                Subscribe to our newsletter and receive the latest news about
+                our products and services!
+              </p>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control bg-transparent s-t" />
+                <div class="input-group-append">
+                  <button class="btn btn-warning">Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div
+              class="text-white mx-auto text-center"
+              style="font-weight: 400; font-size: 15px"
+            >
+              © Copyright <span style="font-weight: 700">GP</span> All Rights
+              Reserved <br />
+              <span style="font-size: 12px">
+                Designed by
+                <span style="color: #ffc451"> BootstrapMade</span></span
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+      <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+          scrollFunction();
+        };
+
+        function scrollFunction() {
+          if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+          ) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
+    </div>
+  </body>
+</html>
